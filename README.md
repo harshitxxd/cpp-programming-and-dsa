@@ -5,10 +5,10 @@ algorithms, problem-solving patterns, and object-oriented programming.
 
 ## Topics
 
-- **Fundamentals** - Basics, binary number systems, bitwise operations, functions, OOP, patterns, and pointers
+- **Fundamentals** - Basics, binary number systems, bitwise operations, functions, OOP, patterns, pointers, and recursion
 - **Data structures** - Arrays, graphs, linked lists, stacks and queues, standard library containers and algorithms, strings, trees, and vectors
 - **Algorithms** - Dynamic programming, recursion, searching, and sorting
-- **Problem solving** - Selected LeetCode solutions
+- **Problem solving** - Selected LeetCode solutions, organized by topic where applicable
 
 ## Repository structure
 
@@ -24,6 +24,7 @@ fundamentals/
   oop/
   patterns/
   pointers/
+  recursion/
 data-structures/
   arrays/
   graphs/
@@ -40,6 +41,7 @@ algorithms/
   sorting-algorithms/
 problem-solving/
   leetcode-solutions/
+    arrays/
 ```
 
 ## Running a Program
