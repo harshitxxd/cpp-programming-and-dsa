@@ -9,6 +9,7 @@
 #include<climits>
 using namespace std;
 
+// Time Complexity: O(n log n)
 bool ispossible(vector<int>arr,int n, int m, int maxallowdtime){
 
     int painter = 1 , time = 0;

@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(log n)
 class solution{
     public :
     bool searchMatrix(vector<vector<int>>& mat, int target){

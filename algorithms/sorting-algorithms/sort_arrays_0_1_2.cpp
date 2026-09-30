@@ -8,6 +8,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n)
 class Solution {
 public:
     void sortColors(vector<int>& nums,int n) {

@@ -3,6 +3,7 @@
 #include<algorithm>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
 
     vector<int> vec = {2,3,6,7,4,8,9,5};

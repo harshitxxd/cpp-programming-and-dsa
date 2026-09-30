@@ -7,6 +7,7 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(n^2)
 void insertion_sort(int arr[], int n){
 
     for (int i = 1 ; i < n; i++){

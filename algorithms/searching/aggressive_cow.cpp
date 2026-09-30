@@ -9,6 +9,7 @@
 #include<algorithm>
 using namespace std;
 
+// Time Complexity: O(n log n)
 bool ispossible(vector<int>& arr,int n,int c, int maxalloweddist){
     int cows = 1 , laststallpos = arr[0];
 

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 class Node {
 public:
     int val;

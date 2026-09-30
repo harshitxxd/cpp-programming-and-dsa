@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     vector<int> vec = {1,2,3,4,5};
     vec.push_back(6) ;

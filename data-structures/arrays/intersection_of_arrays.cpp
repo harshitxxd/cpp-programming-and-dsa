@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 void intersection(int arr1[], int arr2[]) {
     int sz1 = 5, sz2 = 5;
     for (int i = 0; i < sz1; i++) {

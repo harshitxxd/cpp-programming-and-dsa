@@ -2,6 +2,7 @@
 #include<list>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     list<int> l;
     

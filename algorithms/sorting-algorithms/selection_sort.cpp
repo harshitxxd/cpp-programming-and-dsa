@@ -7,6 +7,7 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(n^2)
 void selectionsort(int arr[], int n ){
     for(int i = 0 ; i < n; i++){
         int smallest = i;

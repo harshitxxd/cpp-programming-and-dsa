@@ -9,6 +9,7 @@
 #include <vector>
 using namespace std;
 
+// Time Complexity: O(n)
 class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {

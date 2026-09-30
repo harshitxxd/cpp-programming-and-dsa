@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n * sqrt n)
 void prime() {
     int start, end;
     cout << "enter the start value";

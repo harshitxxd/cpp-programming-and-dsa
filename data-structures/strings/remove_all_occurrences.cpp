@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Time Complexity: O(n)
 class Solution {
 public:
     string removeOccurrences(string s, string part) {

@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Time Complexity: O(n)
 class Teacher{
     private :
     double salary;

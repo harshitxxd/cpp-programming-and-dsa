@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Time Complexity: O(n + m)
 class Solution {
 public:
     bool isfreqsame(int freq1[] , int freq2[]){

@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(1)
 void powerof2() {
     int n;
     cout << "enter the number :";

@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n log log n)
 class Solution {
 public:
     int countPrimes(int n) {

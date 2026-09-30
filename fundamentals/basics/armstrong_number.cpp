@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(log n)
 bool isarmstrong(int n){
     int copyN = n;
     int sumofcubes = 0;

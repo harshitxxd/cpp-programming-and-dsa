@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     string str = "apna college";
     cout << str << endl;

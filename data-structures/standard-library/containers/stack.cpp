@@ -2,6 +2,7 @@
 #include<stack>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     stack<int> s;
     stack<int> s1;

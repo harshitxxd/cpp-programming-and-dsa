@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Time Complexity: O(n)
 void fun(){
     static int x = 0;
     int y = 0;

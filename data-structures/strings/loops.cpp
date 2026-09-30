@@ -3,6 +3,7 @@
 #include<algorithm>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     string str = "harshit dhakad.";
     for(int i = 0; i < str.length();i++){

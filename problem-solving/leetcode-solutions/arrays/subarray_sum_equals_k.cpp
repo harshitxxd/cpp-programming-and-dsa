@@ -9,6 +9,7 @@
 #include <vector>
 using namespace std;
 
+// Time Complexity: O(n)
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {

@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n)
 bool issorted(vector<int>arr, int n){
     if( n == 0 || n == 1){return true;}
     return arr[n-1] >= arr[n-2] && issorted(arr ,n-1);

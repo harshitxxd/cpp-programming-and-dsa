@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(log n)
 int reverse() {
     int num = 125;
     int revnum = 0;

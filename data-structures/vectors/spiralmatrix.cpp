@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n * m)
 class solution{
     public:
     vector<int> spiralOrder(vector<vector<int>>& mat){

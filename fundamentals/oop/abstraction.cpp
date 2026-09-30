@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Time Complexity: O(n)
 
 class shape { // abstract class
     virtual void draw() = 0; // pure virtual function

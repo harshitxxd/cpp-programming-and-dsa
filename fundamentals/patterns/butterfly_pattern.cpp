@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n^2)
 int main() {
     int n = 4;
 

@@ -2,6 +2,7 @@
 #include<map>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
 
     map<string,int> m;

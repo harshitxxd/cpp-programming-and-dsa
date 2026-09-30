@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n * m)
 int main(){
     vector<vector<int>> v = {{1,2,3},{4,5,6},{7,8,9}};
     

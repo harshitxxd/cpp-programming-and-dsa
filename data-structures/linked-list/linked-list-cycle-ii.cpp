@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 struct ListNode {
     int val;
     ListNode* next;

@@ -6,6 +6,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 class Box {
 private:
     int width;

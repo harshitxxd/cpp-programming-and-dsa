@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n^2)
 bool comparator(pair<int,int>p1,pair<int,int>p2){
     if(p1.second > p2.second) return false;
     if(p1.second < p2.second) return true;

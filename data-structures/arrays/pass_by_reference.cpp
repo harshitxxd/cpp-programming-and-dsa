@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 
 void changearr(int arr[], int size) {
     cout << "in function\n";

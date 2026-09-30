@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n^2)
 void unique(int arr[], int sz) {
     for (int i = 0; i < sz; i++) {
         int count = 0;

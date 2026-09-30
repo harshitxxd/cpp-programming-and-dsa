@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n^2)
 int diagonal_sum(int matrix[][4], int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {

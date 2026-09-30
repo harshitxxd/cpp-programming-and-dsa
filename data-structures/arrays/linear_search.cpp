@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 int linearsearch(int arr[], int sz, int target) {
     for (int i = 0; i < sz; i++) {
         if (arr[i] == target) {

@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {

@@ -2,6 +2,7 @@
 #include<cstring>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
 //     char str[] = {'a','b','c'};
 //     char str1[] = {'a','b','c','\0'};

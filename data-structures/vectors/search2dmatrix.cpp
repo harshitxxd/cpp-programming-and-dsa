@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(log n)
 class solution{
     public: 
     bool searchinrow(vector<vector<int>>& matrix,int target , int row){

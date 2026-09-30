@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 void fibonacci() {
     int n, a = 0, b = 1, next;
     cout << "enter the value of n ";

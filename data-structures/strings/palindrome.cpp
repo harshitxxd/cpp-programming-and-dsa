@@ -2,6 +2,7 @@
 #include<string>
  using namespace std;
 
+// Time Complexity: O(n)
  int main(){
     string str ="racecar";
     bool ispalindrome = true ;

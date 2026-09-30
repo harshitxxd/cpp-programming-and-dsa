@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(log n)
 int dectobin() {
     int decno, rem, ans = 0, pow = 1;
     cout << "enter the decimal value";

@@ -7,6 +7,7 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 void changea(int value){ 
     value = 10;
 }

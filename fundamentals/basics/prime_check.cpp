@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(sqrt n)
 int main() {
     int n = 21;
     bool isPrime = true;

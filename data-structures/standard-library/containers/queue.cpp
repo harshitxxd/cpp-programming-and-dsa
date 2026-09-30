@@ -2,6 +2,7 @@
 #include<queue>
 using namespace std;
 
+// Time Complexity: O(n)
 int main(){
     queue<int> q;
 

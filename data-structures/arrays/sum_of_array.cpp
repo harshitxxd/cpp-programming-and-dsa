@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 int sumofarr(int arr[], int sz) {
     int sum = 0;
     for (int i = 0; i < sz; i++) {

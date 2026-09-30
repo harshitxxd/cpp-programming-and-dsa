@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n)
 void reversearr(int arr[], int sz) {
     int start = 0, end = sz - 1;
     while (start <= end) {

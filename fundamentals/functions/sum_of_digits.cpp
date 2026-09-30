@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(log n)
 int sumofdigit(int num) {
     int digitsum = 0;
     while (num > 0) {

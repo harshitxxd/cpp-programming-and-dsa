@@ -9,6 +9,7 @@
 #include<algorithm>
 using namespace std;
 
+// Time Complexity: O(n)
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {

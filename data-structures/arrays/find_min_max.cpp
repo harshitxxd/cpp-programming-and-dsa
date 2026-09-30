@@ -8,6 +8,7 @@
 #include <climits>
 using namespace std;
 
+// Time Complexity: O(n)
 int main() {
     int nums[] = {5, 15, 22, 1, -15, 24};
     int smallest = INT_MAX;

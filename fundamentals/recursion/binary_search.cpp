@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+// Time Complexity: O(log n)
 class Solution {
 public:
     int binary_search(const vector<int>& arr, int target, int st, int end) {
