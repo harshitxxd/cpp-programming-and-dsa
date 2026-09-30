@@ -1,5 +1,5 @@
 /*
- * File: single_element_in sorted_array.cpp
+ * File: single_element_in_sorted_array.cpp
  * Description: This program finds the single element that occurs once while all others appear twice.
  *
  */

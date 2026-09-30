@@ -42,6 +42,8 @@ algorithms/
 problem-solving/
   leetcode-solutions/
     arrays/
+    math/
+    recursion/
 ```
 
 ## Running a Program

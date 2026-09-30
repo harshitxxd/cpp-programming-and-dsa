@@ -1,5 +1,5 @@
 /*
- * File: pointer_arthematic.cpp
+ * File: pointer_arithmetic.cpp
  * Description: This program demonstrates pointer arithmetic operations on an array.
  *
  */

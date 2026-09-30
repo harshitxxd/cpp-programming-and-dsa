@@ -1,5 +1,5 @@
 /*
- * File: stock buy and sell.cpp
+ * File: stock_buy_and_sell.cpp
  * Description: This program calculates the maximum profit from buying and selling a stock once per day.
  *
  */

@@ -1,6 +1,6 @@
 /*
- * File: find_missing_and_repeated_values.cpp
- * Description: This program finds the repeated value and the missing value in a matrix containing numbers from 1 to n^2.
+ * File: find_missing_and_repeated_values_frequency.cpp
+ * Description: Finds repeated and missing matrix values using frequency counting.
  *
  */
 

@@ -1,5 +1,5 @@
 /*
- * File: containerwithmostwater.cpp
+ * File: container_with_most_water.cpp
  * Description: This program calculates the maximum area of water a container can hold between two vertical lines.
  *
  */

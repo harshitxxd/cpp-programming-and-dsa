@@ -1,5 +1,5 @@
 /*
- * File: peak_index_in_moutain_array.cpp
+ * File: peak_index_in_mountain_array.cpp
  * Description: This program finds the peak index in a mountain array.
  *
  */
