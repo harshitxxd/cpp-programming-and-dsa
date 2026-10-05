@@ -5,7 +5,7 @@ using namespace std;
 void permutatestring(string str,int idx ){
     if(idx == str.length()){
         for(char val : str){
-            cout << str[val] << " ";
+            cout << val << " ";
         }
         cout << endl;
         return;

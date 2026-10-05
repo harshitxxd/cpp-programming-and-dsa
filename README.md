@@ -1,50 +1,42 @@
-# C++ Programming and DSA Practice
+﻿# C++ Programming and DSA Practice
 
-A collection of C++ solutions and practice programs covering data structures,
-algorithms, problem-solving patterns, and object-oriented programming.
-
-## Topics
-
-- **Fundamentals** - Basics, binary number systems, bitwise operations, functions, OOP, patterns, pointers, and recursion
-- **Data structures** - Arrays, graphs, linked lists, stacks and queues, standard library containers and algorithms, strings, trees, and vectors
-- **Algorithms** - Dynamic programming, recursion, searching, and sorting
-- **Problem solving** - Selected LeetCode solutions, organized by topic where applicable
+A collection of C++ examples and problem solutions organized as a learning path: fundamentals, data structures, algorithms, and problem-solving practice.
 
 ## Repository structure
 
-The repository groups related topics into broader categories. Add new solutions
-to the relevant topic directory:
-
 ```text
-fundamentals/
+01-fundamentals/
   basics/
-  binary-number-system/
-  bitwise/
+  binary-and-bitwise/
   functions/
+  math/
   oop/
   patterns/
   pointers/
   recursion/
-data-structures/
-  arrays/
-  graphs/
-  linked-list/
+02-data-structures/
+  arrays-and-vectors/
+  linked-lists/
   stacks-and-queues/
   standard-library/
+    algorithms/
+    containers/
   strings/
-  trees/
-  vectors/
-algorithms/
-  dynamic-programming/
-  recursion/
+03-algorithms/
+  recursion-and-backtracking/
   searching/
-  sorting-algorithms/
-problem-solving/
-  leetcode-solutions/
+  sorting/
+04-problem-solving/
+  leetcode/
     arrays/
     math/
     recursion/
 ```
+
+Use the numbered top-level directories to follow the learning path. Keep general
+practice examples in the fundamentals, data-structures, or algorithms sections;
+keep platform-specific challenge solutions under `04-problem-solving/leetcode/`
+and organize them by topic.
 
 ## Running a Program
 
