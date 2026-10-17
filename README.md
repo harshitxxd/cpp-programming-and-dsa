@@ -18,6 +18,7 @@ A collection of C++ examples and problem solutions organized as a learning path:
   arrays-and-vectors/
   linked-lists/
   stacks-and-queues/
+  trees/
   standard-library/
     algorithms/
     containers/
@@ -29,8 +30,10 @@ A collection of C++ examples and problem solutions organized as a learning path:
 04-problem-solving/
   leetcode/
     arrays/
+    design/
     math/
     recursion/
+    strings/
 ```
 
 Use the numbered top-level directories to follow the learning path. Keep general
