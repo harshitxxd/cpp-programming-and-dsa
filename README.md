@@ -6,7 +6,6 @@ A collection of C++ examples and problem solutions organized as a learning path:
 
 ```text
 01-fundamentals/
-  basics/
   binary-and-bitwise/
   functions/
   math/

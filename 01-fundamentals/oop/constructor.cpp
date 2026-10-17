@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include<string>
 
 using namespace std;
@@ -72,14 +72,17 @@ int main(){
     Teacher t1("harshit","computer science","C++",25000);
     t1.getinfo();
     Teacher t2(t1); // copy constructor by default
+    t2.subject = "java";
     t2.getinfo();
+    t1.getinfo();
 
     Student s1("harshit",9.8);
     Student s2(s1);
 
     s1.getinfo();
     *s2.cgpaptr = 9.2;
-    s1.getinfo(); 
+    s2.getinfo();
+    s1.getinfo();
 
     return 0;
 }
