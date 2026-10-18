@@ -2,6 +2,9 @@
  * File: merge_2_sorted_array.cpp
  * Description: This program merges two sorted arrays into a single sorted array.
  *
+ * Time Complexity: O(m + n) - three-pointer backward merge pass.
+ * Space Complexity: O(1) - in-place modification of nums1.
+ *
  */
 
 #include<iostream>

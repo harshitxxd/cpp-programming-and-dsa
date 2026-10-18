@@ -1,6 +1,9 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+// Time Complexity: O(n log n) - divide-and-conquer like merge sort.
+// Space Complexity: O(n) - temporary vector used during merging.
 int merge(vector<int>&arr, int st, int mid , int end){
     vector<int> temp ;
     int i = st , j = mid +1;

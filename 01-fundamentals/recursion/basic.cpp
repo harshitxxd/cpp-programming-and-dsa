@@ -1,5 +1,8 @@
 #include<iostream>
 using namespace std;
+
+// Time Complexity: O(n) for printnums, factorial, and sum functions
+// Space Complexity: O(n) - recursion call stack depth
 void printnums(int n){
     if(n == 1){
         cout << "1\n";

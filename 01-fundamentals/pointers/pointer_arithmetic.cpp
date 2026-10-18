@@ -2,6 +2,9 @@
  * File: pointer_arithmetic.cpp
  * Description: This program demonstrates pointer arithmetic operations on an array.
  *
+ * Time Complexity: O(1) - constant-time pointer addition, subtraction, and prints.
+ * Space Complexity: O(1) - primitive variable and pointer.
+ *
  */
 
 #include<iostream>

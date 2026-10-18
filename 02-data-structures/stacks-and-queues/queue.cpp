@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(1) for push, pop, front, empty
+// Space Complexity: O(n) - stores n elements as linked list nodes
 class node {
     public :
     int data;

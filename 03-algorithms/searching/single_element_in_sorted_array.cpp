@@ -2,6 +2,9 @@
  * File: single_element_in_sorted_array.cpp
  * Description: This program finds the single element that occurs once while all others appear twice.
  *
+ * Time Complexity: O(log n) - binary search using index parity.
+ * Space Complexity: O(1) - uses constant extra space.
+ *
  */
 
 #include<iostream>

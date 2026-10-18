@@ -2,6 +2,9 @@
  * File: power.cpp
  * Description: This program computes a number raised to a power using exponentiation logic.
  *
+ * Time Complexity: O(log n) - binary exponentiation divides exponent by 2 in each iteration.
+ * Space Complexity: O(1) - constant auxiliary space.
+ *
  */
 
 #include<iostream>

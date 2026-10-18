@@ -1,5 +1,8 @@
 #include<iostream>
 using namespace std;
+
+// Time Complexity: O(1) for push_front, push_back, pop_front, pop_back; O(n) for display
+// Space Complexity: O(n) - stores n nodes in the doubly linked list
 class node{
     public:
     int data;

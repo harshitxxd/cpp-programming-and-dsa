@@ -1,7 +1,9 @@
 #include<iostream>
 #include<vector>
 using namespace std;
- 
+
+// Time Complexity: O(1) for pair initialization and member access; O(n) for vector display
+// Space Complexity: O(1) auxiliary space (O(n) for vector of pairs)
 int main(){
     pair<int,int> p = {1,2};
 

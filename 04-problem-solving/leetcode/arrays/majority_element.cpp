@@ -2,6 +2,9 @@
  * File: majority_element.cpp
  * Description: This program identifies a majority element using the Boyer-Moore voting algorithm.
  *
+ * Time Complexity: O(n) - single pass through the array.
+ * Space Complexity: O(1) - uses only candidate and count variables.
+ *
  */
 
 #include<iostream>

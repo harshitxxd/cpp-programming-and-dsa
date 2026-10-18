@@ -2,6 +2,9 @@
 #include<string>
 #include<algorithm>
 using namespace std;
+
+// Time Complexity: O(n) - two-pass string reversal and word construction.
+// Space Complexity: O(n) - stores words and result string.
 class Solution {
 public:
     string reverseWords(string s) {

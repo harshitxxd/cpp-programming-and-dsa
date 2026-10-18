@@ -2,6 +2,9 @@
  * File: basic.cpp
  * Description: This program introduces basic pointer usage in C++.
  *
+ * Time Complexity: O(1) - constant-time pointer address-of and dereference operations.
+ * Space Complexity: O(1) - primitive variables and pointer storage.
+ *
  */
 
 #include<iostream>

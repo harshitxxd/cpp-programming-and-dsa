@@ -3,6 +3,8 @@
 #include<stack>
 using namespace std;
 
+// Time Complexity: O(n) - each element is pushed and popped at most once.
+// Space Complexity: O(n) - monotonic stack and result vector.
 int main(){
     vector<int>price = {100, 80, 60, 70, 60, 75, 85 };
     vector<int> ans(price.size(),0);

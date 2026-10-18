@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity: O(1) for push, pop, front, empty
+// Space Complexity: O(cap) - dynamically allocated array of size cap
 class circular{
     int * arr;
     int currsize,cap;

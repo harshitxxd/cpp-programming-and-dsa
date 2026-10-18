@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(4^(n^2)) - in the worst case, 4 recursive branches per cell.
+// Space Complexity: O(n^2) - for the recursion call stack and paths in an n x n grid.
 void helper (vector<vector<int>> &mat,int r,int c,string path , vector<string>&ans){
     int n = mat.size();
     if(r < 0 || c < 0 || r >= n|| c >= n || mat[r][c] == 0 || mat[r][c] == -1){

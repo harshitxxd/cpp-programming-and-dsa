@@ -2,7 +2,8 @@
 #include<list>
 using namespace std;
 
-
+// Time Complexity: O(1) for push, pop, top, empty
+// Space Complexity: O(n) - stores n elements in a doubly linked list
 class stack{
     list<int>ll;
 

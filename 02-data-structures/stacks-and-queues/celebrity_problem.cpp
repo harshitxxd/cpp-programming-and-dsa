@@ -3,6 +3,8 @@
 #include<stack>
 using namespace std;
 
+// Time Complexity: O(n) - elimination takes O(n) and verification takes O(n).
+// Space Complexity: O(n) - stack stores n potential celebrities.
 int getcelebrity(vector<vector<int>>& arr){
     int n = arr.size();
     stack<int> s;

@@ -2,6 +2,9 @@
  * File: peak_index_in_mountain_array.cpp
  * Description: This program finds the peak index in a mountain array.
  *
+ * Time Complexity: O(log n) - binary search halves search space each iteration.
+ * Space Complexity: O(1) - uses constant auxiliary space.
+ *
  */
 
 #include<iostream>

@@ -44,6 +44,15 @@ and organize them by topic.
 All solution files follow `snake_case.cpp` naming and include header comments
 documenting time and space complexity alongside self-contained test cases.
 
+## LeetCode tree solutions
+
+The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
+
+- `same_tree.cpp` checks whether two binary trees have identical structure and
+  node values.
+- `subtree_of_another_tree.cpp` checks whether one binary tree is a subtree of
+  another.
+
 ## Running a Program
 
 Compile any source file with a C++17-compatible compiler:

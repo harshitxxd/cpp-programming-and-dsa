@@ -2,6 +2,9 @@
  * File: search_in_rotated_sorted_array.cpp
  * Description: This program searches for an element in a rotated sorted array.
  *
+ * Time Complexity: O(log n) - modified binary search on rotated sorted array.
+ * Space Complexity: O(1) - constant auxiliary variables.
+ *
  */
 
 #include<iostream>

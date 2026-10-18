@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(1) amortized for push, O(1) for pop, top, empty
+// Space Complexity: O(n) - stores n elements in a dynamic vector
 class stack{
     vector<int> v;
     

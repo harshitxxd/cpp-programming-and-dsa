@@ -2,6 +2,9 @@
  * File: array_pointers.cpp
  * Description: This program demonstrates how pointer arithmetic works with arrays.
  *
+ * Time Complexity: O(1) - constant-time pointer dereference and print operations.
+ * Space Complexity: O(1) - fixed-size array in local stack frame.
+ *
  */
 
 #include<iostream>

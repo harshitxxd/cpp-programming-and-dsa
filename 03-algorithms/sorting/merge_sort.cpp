@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n log n) - divides array log n times and merges each level in O(n).
+// Space Complexity: O(n) - temporary storage used during merge step plus O(log n) call stack.
 void merge(vector<int>&arr, int st , int mid, int end){
     vector<int>temp;
     int i = st , j = mid+1;

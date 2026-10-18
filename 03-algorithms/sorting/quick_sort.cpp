@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// Time Complexity: O(n log n) average, O(n^2) worst case (unbalanced partitions).
+// Space Complexity: O(log n) average recursive stack space, O(n) worst case.
 int partition(vector<int>&arr , int  st , int end ){
     int idx = st -1, pivot = arr[end];
     for ( int j = st ; j < end ; j++){

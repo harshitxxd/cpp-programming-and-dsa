@@ -2,6 +2,9 @@
  * File: container_with_most_water.cpp
  * Description: This program calculates the maximum area of water a container can hold between two vertical lines.
  *
+ * Time Complexity: O(n) - two pointer traversal examines each element at most once.
+ * Space Complexity: O(1) - uses only a few pointers and variables.
+ *
  */
 
 #include <iostream>
