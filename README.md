@@ -1,4 +1,4 @@
-﻿# C++ Programming and DSA Practice
+# C++ Programming and DSA Practice
 
 A collection of C++ examples and problem solutions organized as a learning path: fundamentals, data structures, algorithms, and problem-solving practice.
 
@@ -33,12 +33,16 @@ A collection of C++ examples and problem solutions organized as a learning path:
     math/
     recursion/
     strings/
+    trees/
 ```
 
 Use the numbered top-level directories to follow the learning path. Keep general
 practice examples in the fundamentals, data-structures, or algorithms sections;
 keep platform-specific challenge solutions under `04-problem-solving/leetcode/`
 and organize them by topic.
+
+All solution files follow `snake_case.cpp` naming and include header comments
+documenting time and space complexity alongside self-contained test cases.
 
 ## Running a Program
 
