@@ -4,9 +4,8 @@
  *              of the tree. The diameter is the length of the longest path between
  *              any two nodes in a tree (represented by the number of edges).
  *
- * Time Complexity: O(n^2) in the worst case (skewed tree) and O(n log n) in a balanced tree,
- *                  as height() is called for each node during diameter calculation.
- * Space Complexity: O(h) - recursion call stack depth bounded by tree height h (O(n) worst case).
+ * Time Complexity: O(n) - visits each node exactly once during post-order traversal while updating the maximum diameter.
+ * Space Complexity: O(h) - recursion call stack depth bounded by tree height h (O(n) worst case, O(log n) balanced).
  *
  */
 
@@ -45,25 +44,22 @@ TreeNode* buildTree(const vector<int>& preorder) {
 
 class Solution {
 public:
+    int ans = 0;
+
     int height(TreeNode* root) {
         if (root == NULL) {
             return 0;
         }
         int leftht = height(root->left);
         int rightht = height(root->right);
-
+        ans = max(leftht + rightht, ans);
         return max(leftht, rightht) + 1;
     }
 
     int diameterOfBinaryTree(TreeNode* root) {
-        if (root == NULL) {
-            return 0;
-        }
-        int leftdiam = diameterOfBinaryTree(root->left);
-        int rightdiam = diameterOfBinaryTree(root->right);
-        int currdiam = height(root->left) + height(root->right);
-
-        return max(currdiam, max(leftdiam, rightdiam));
+        ans = 0;
+        height(root);
+        return ans;
     }
 };
 
