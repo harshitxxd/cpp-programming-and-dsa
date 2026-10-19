@@ -52,6 +52,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   node values.
 - `subtree_of_another_tree.cpp` checks whether one binary tree is a subtree of
   another.
+- `diameter_of_binary_tree.cpp` calculates the diameter (longest path between
+  any two nodes) of a binary tree.
 
 ## Running a Program
 
