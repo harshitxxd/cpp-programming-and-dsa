@@ -1,4 +1,14 @@
-﻿#include <iostream>
+/*
+ * File: binary_tree.cpp
+ * Description: Implementation of a binary tree with recursive tree building and
+ *              standard tree traversals: preorder, inorder, postorder, and level-order (BFS).
+ *
+ * Time Complexity: O(n) - tree construction and each traversal visits each of the n nodes once.
+ * Space Complexity: O(h) for recursive traversals (O(n) for level-order queue), where h is tree height.
+ *
+ */
+
+#include <iostream>
 #include <vector>
 #include<queue>
 using namespace std;

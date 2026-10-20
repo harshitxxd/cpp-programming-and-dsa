@@ -1,3 +1,13 @@
+/*
+ * File: identical_tree.cpp
+ * Description: Checks whether two binary trees are structurally identical and
+ *              contain identical node values at corresponding positions.
+ *
+ * Time Complexity: O(min(n1, n2)) - visits nodes of both trees simultaneously until mismatch or termination.
+ * Space Complexity: O(min(h1, h2)) - recursion stack bounded by the smaller tree height.
+ *
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

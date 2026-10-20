@@ -1,3 +1,13 @@
+/*
+ * File: height_count_tree.cpp
+ * Description: Calculates fundamental binary tree metrics: height of the tree,
+ *              total number of nodes (count), and the sum of all node values.
+ *
+ * Time Complexity: O(n) - each metric (height, count, sum) traverses every node once.
+ * Space Complexity: O(h) - recursion call stack depth bounded by tree height h.
+ *
+ */
+
 #include <iostream>
 #include <vector>
 #include <queue>
