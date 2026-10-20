@@ -1,3 +1,9 @@
+﻿/*
+ * File: string_compression.cpp
+ * Description: Compresses consecutive repeated characters in a character
+ *              array in place.
+ */
+
 #include<iostream>
 #include<string>
 #include<vector>

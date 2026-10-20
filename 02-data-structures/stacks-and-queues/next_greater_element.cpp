@@ -1,3 +1,9 @@
+﻿/*
+ * File: next_greater_element.cpp
+ * Description: Finds the next greater value to the right for each array
+ *              element using a monotonic stack.
+ */
+
 #include<iostream>
 #include<vector>
 #include<stack>

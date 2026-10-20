@@ -1,4 +1,10 @@
-﻿#include <iostream>
+﻿/*
+ * File: lru_cache.cpp
+ * Description: Implements an LRU cache with average constant-time lookup,
+ *              insertion, and eviction.
+ */
+
+#include <iostream>
 #include <unordered_map>
 using namespace std;
 

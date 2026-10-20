@@ -1,3 +1,8 @@
+﻿/*
+ * File: stack_vector.cpp
+ * Description: Implements a LIFO stack using a vector.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

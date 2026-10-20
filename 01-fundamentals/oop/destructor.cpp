@@ -1,3 +1,9 @@
+﻿/*
+ * File: destructor.cpp
+ * Description: Demonstrates using a destructor to release dynamically
+ *              allocated student data.
+ */
+
 #include<iostream>
 #include<string>
 

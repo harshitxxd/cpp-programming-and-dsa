@@ -1,3 +1,8 @@
+﻿/*
+ * File: swap_nodes_in_pairs.cpp
+ * Description: Swaps every adjacent pair of nodes in a singly linked list.
+ */
+
 #include <iostream>
 using namespace std;
 

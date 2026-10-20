@@ -1,3 +1,9 @@
+﻿/*
+ * File: palindrome_partitioning.cpp
+ * Description: Returns all partitions of a string in which every substring is
+ *              a palindrome.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <string>

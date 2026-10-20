@@ -1,3 +1,9 @@
+﻿/*
+ * File: basics.cpp
+ * Description: Demonstrates class fields, encapsulation, and accessor and
+ *              mutator methods with a Teacher class.
+ */
+
 #include<iostream>
 #include<string>
 

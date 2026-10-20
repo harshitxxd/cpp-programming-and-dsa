@@ -1,4 +1,9 @@
-﻿ #include <iostream>
+﻿/*
+ * File: my_queue_using_stacks.cpp
+ * Description: Implements a FIFO queue using two stacks.
+ */
+
+ #include <iostream>
 #include <stack>
 using namespace std;
 

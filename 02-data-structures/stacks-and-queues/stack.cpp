@@ -1,3 +1,9 @@
+﻿/*
+ * File: stack.cpp
+ * Description: Demonstrates basic stack operations using the C++ standard
+ *              library.
+ */
+
 #include<iostream>
 #include<stack>
 using namespace std;

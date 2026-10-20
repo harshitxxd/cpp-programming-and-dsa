@@ -1,3 +1,9 @@
+﻿/*
+ * File: other.cpp
+ * Description: Demonstrates standard algorithms for reversing ranges,
+ *              permutations, extrema, binary search, and swapping.
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

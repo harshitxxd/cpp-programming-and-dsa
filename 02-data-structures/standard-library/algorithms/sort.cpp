@@ -1,3 +1,9 @@
+﻿/*
+ * File: sort.cpp
+ * Description: Demonstrates sorting arrays and pairs in ascending or
+ *              descending order with custom comparators.
+ */
+
 #include<iostream>
 #include<algorithm>
 #include<vector>

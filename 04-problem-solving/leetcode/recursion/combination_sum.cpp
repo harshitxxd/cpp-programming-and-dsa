@@ -1,3 +1,8 @@
+﻿/*
+ * File: combination_sum.cpp
+ * Description: Finds combinations of candidate numbers that sum to a target.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <set>

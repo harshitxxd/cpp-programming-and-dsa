@@ -1,3 +1,8 @@
+﻿/*
+ * File: reverse_nodes_in_k_group.cpp
+ * Description: Reverses nodes of a singly linked list in groups of k.
+ */
+
 #include <iostream>
 using namespace std;
 

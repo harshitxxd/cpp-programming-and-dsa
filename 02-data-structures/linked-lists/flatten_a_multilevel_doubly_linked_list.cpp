@@ -1,3 +1,9 @@
+﻿/*
+ * File: flatten_a_multilevel_doubly_linked_list.cpp
+ * Description: Flattens a multilevel doubly linked list into a single-level
+ *              list.
+ */
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,8 @@
+﻿/*
+ * File: loops.cpp
+ * Description: Demonstrates iterating over string characters with loops.
+ */
+
 #include<iostream>
 #include<string>
 #include<algorithm>

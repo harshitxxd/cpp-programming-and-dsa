@@ -1,3 +1,9 @@
+﻿/*
+ * File: valid_parentheses.cpp
+ * Description: Checks whether a string of brackets has valid matching and
+ *              nesting.
+ */
+
 #include <iostream>
 #include <stack>
 #include <string>

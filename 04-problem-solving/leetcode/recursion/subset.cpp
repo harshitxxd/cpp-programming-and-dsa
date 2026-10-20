@@ -1,3 +1,8 @@
+﻿/*
+ * File: subset.cpp
+ * Description: Generates all subsets of an integer array.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

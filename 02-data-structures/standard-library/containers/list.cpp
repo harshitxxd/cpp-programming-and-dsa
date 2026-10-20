@@ -1,3 +1,8 @@
+﻿/*
+ * File: list.cpp
+ * Description: Demonstrates common operations on a C++ standard library list.
+ */
+
 #include<iostream>
 #include<list>
 using namespace std;

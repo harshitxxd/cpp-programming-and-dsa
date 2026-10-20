@@ -1,3 +1,9 @@
+﻿/*
+ * File: maximum_row_col_sum.cpp
+ * Description: Calculates the maximum row sum and maximum column sum in a
+ *              matrix.
+ */
+
 // Time Complexity: O(n^2)
 
 #include<iostream>

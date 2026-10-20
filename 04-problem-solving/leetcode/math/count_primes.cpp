@@ -1,3 +1,9 @@
+﻿/*
+ * File: count_primes.cpp
+ * Description: Counts prime numbers less than n using the Sieve of
+ *              Eratosthenes.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

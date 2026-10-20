@@ -1,3 +1,9 @@
+﻿/*
+ * File: permutation_in_string.cpp
+ * Description: Checks whether one string's character permutation occurs as a
+ *              substring of another.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

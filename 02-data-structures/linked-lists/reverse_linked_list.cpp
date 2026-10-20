@@ -1,3 +1,8 @@
+﻿/*
+ * File: reverse_linked_list.cpp
+ * Description: Reverses a singly linked list.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,3 +1,9 @@
+﻿/*
+ * File: armstrong_number.cpp
+ * Description: Checks whether a number equals the sum of the cubes of its
+ *              digits.
+ */
+
 #include<iostream>
 using namespace std;
 

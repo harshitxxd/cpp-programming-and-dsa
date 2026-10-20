@@ -1,3 +1,9 @@
+﻿/*
+ * File: copy_list_with_random_pointer.cpp
+ * Description: Creates a deep copy of a linked list whose nodes have next and
+ *              random pointers.
+ */
+
 #include <iostream>
 #include <unordered_map>
 using namespace std;

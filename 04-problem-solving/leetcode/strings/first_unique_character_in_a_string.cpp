@@ -1,4 +1,10 @@
-﻿#include <iostream>
+﻿/*
+ * File: first_unique_character_in_a_string.cpp
+ * Description: Returns the index of the first non-repeating character in a
+ *              string.
+ */
+
+#include <iostream>
 #include <queue>
 #include <string>
 #include <unordered_map>

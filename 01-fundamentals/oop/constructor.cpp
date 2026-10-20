@@ -1,4 +1,10 @@
-﻿#include<iostream>
+﻿/*
+ * File: constructor.cpp
+ * Description: Demonstrates default, parameterized, and copy constructors,
+ *              including deep copying a dynamically allocated value.
+ */
+
+#include<iostream>
 #include<string>
 
 using namespace std;

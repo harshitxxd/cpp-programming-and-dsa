@@ -1,3 +1,9 @@
+﻿/*
+ * File: circular_queue.cpp
+ * Description: Implements a fixed-capacity circular queue using a dynamically
+ *              allocated array.
+ */
+
 #include<iostream>
 using namespace std;
 

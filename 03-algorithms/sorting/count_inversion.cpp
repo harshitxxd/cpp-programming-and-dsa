@@ -1,3 +1,9 @@
+﻿/*
+ * File: count_inversion.cpp
+ * Description: Counts array inversions using a merge-sort-based
+ *              divide-and-conquer algorithm.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

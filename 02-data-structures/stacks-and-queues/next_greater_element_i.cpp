@@ -1,3 +1,9 @@
+﻿/*
+ * File: next_greater_element_i.cpp
+ * Description: Finds the next greater value for each queried element using a
+ *              reference array and monotonic stack.
+ */
+
 #include <iostream>
 #include <stack>
 #include <unordered_map>

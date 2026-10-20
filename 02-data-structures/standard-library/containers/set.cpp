@@ -1,3 +1,9 @@
+﻿/*
+ * File: set.cpp
+ * Description: Demonstrates inserting and iterating over unique ordered
+ *              values in a set.
+ */
+
 #include<iostream>
 #include<set>
 using namespace std;

@@ -1,3 +1,9 @@
+﻿/*
+ * File: deque.cpp
+ * Description: Demonstrates adding, removing, and accessing elements in a
+ *              deque.
+ */
+
 #include<iostream>
 #include<deque>
 using namespace std;

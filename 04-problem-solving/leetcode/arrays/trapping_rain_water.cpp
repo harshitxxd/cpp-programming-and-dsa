@@ -1,3 +1,9 @@
+﻿/*
+ * File: trapping_rain_water.cpp
+ * Description: Calculates trapped rainwater using two-pointer and
+ *              prefix-maximum approaches.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

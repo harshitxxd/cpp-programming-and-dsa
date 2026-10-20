@@ -1,3 +1,9 @@
+﻿/*
+ * File: queue.cpp
+ * Description: Demonstrates FIFO operations using the C++ standard library
+ *              queue.
+ */
+
 #include<iostream>
 #include<queue>
 using namespace std;

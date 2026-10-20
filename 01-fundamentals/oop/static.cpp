@@ -1,3 +1,9 @@
+﻿/*
+ * File: static.cpp
+ * Description: Demonstrates static local variables, static object lifetime,
+ *              and member functions.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

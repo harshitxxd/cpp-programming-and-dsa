@@ -1,3 +1,9 @@
+﻿/*
+ * File: character_array.cpp
+ * Description: Demonstrates C-style character arrays, null termination, and
+ *              string operations.
+ */
+
 #include<iostream>
 #include<cstring>
 using namespace std;

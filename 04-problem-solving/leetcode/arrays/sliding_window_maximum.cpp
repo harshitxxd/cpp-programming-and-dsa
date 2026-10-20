@@ -1,4 +1,10 @@
-﻿#include <deque>
+﻿/*
+ * File: sliding_window_maximum.cpp
+ * Description: Returns the maximum value for every fixed-size sliding window
+ *              in an array.
+ */
+
+#include <deque>
 #include <iostream>
 #include <vector>
 using namespace std;

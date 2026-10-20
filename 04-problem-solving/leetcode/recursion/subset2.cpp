@@ -1,3 +1,9 @@
+﻿/*
+ * File: subset2.cpp
+ * Description: Generates all distinct subsets of an integer array that may
+ *              contain duplicates.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

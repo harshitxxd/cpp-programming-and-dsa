@@ -1,3 +1,9 @@
+﻿/*
+ * File: binary_search.cpp
+ * Description: Searches for a target in a sorted array using recursive binary
+ *              search.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

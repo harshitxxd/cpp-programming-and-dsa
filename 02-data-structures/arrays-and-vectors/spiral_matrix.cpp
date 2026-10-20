@@ -1,3 +1,8 @@
+﻿/*
+ * File: spiral_matrix.cpp
+ * Description: Traverses and prints a matrix in spiral order.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

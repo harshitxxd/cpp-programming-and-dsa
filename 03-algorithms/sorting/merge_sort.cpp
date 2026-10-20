@@ -1,3 +1,8 @@
+﻿/*
+ * File: merge_sort.cpp
+ * Description: Sorts an integer array using the merge sort algorithm.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

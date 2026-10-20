@@ -1,3 +1,9 @@
+﻿/*
+ * File: print_all_subset.cpp
+ * Description: Generates and prints every subset of an integer array using
+ *              recursion.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

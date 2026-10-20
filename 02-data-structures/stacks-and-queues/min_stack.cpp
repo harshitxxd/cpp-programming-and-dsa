@@ -1,3 +1,9 @@
+﻿/*
+ * File: min_stack.cpp
+ * Description: Implements a stack that supports retrieving the minimum value
+ *              in constant time.
+ */
+
 #include <iostream>
 #include <stack>
 using namespace std;

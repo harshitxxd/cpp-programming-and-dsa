@@ -1,3 +1,9 @@
+﻿/*
+ * File: rat_maze.cpp
+ * Description: Finds paths through a maze by recursively exploring valid
+ *              neighboring cells.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

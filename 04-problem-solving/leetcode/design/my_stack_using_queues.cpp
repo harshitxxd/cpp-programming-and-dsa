@@ -1,4 +1,9 @@
-﻿#include <iostream>
+﻿/*
+ * File: my_stack_using_queues.cpp
+ * Description: Implements a LIFO stack using two queues.
+ */
+
+#include <iostream>
 #include <queue>
 using namespace std;
 

@@ -1,3 +1,9 @@
+﻿/*
+ * File: circular_linked_list.cpp
+ * Description: Implements insertion and deletion operations for a circular
+ *              singly linked list.
+ */
+
 #include<iostream>
 using namespace std;
 

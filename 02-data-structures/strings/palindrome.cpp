@@ -1,3 +1,8 @@
+﻿/*
+ * File: palindrome.cpp
+ * Description: Checks whether a string reads the same forwards and backwards.
+ */
+
 #include<iostream>
 #include<string>
  using namespace std;

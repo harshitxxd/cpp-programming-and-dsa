@@ -1,3 +1,8 @@
+﻿/*
+ * File: sudoku_solver.cpp
+ * Description: Solves a Sudoku board using recursive backtracking.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

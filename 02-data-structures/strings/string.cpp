@@ -1,3 +1,9 @@
+﻿/*
+ * File: string.cpp
+ * Description: Demonstrates common C++ string construction, access, and
+ *              modification operations.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

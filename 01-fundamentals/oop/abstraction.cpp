@@ -1,3 +1,9 @@
+﻿/*
+ * File: abstraction.cpp
+ * Description: Demonstrates abstraction with an abstract shape class and a
+ *              concrete drawing implementation.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

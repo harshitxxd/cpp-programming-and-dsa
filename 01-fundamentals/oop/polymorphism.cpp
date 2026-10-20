@@ -1,3 +1,9 @@
+﻿/*
+ * File: polymorphism.cpp
+ * Description: Demonstrates constructor and function overloading as well as
+ *              virtual-function overriding.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

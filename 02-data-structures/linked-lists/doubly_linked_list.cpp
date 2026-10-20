@@ -1,3 +1,9 @@
+﻿/*
+ * File: doubly_linked_list.cpp
+ * Description: Implements a doubly linked list with insertion, removal, and
+ *              display operations.
+ */
+
 #include<iostream>
 using namespace std;
 

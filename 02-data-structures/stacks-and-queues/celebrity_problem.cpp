@@ -1,3 +1,9 @@
+﻿/*
+ * File: celebrity_problem.cpp
+ * Description: Finds the celebrity in a relationship matrix using a
+ *              stack-based elimination approach.
+ */
+
 #include<iostream>
 #include<vector>
 #include<stack>

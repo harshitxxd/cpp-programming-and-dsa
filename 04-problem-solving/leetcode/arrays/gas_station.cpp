@@ -1,4 +1,10 @@
-﻿#include <iostream>
+﻿/*
+ * File: gas_station.cpp
+ * Description: Finds the unique gas-station start index that allows
+ *              completing a circular route.
+ */
+
+#include <iostream>
 #include <vector>
 using namespace std;
 

@@ -1,3 +1,8 @@
+﻿/*
+ * File: has_cycle.cpp
+ * Description: Detects whether a singly linked list contains a cycle.
+ */
+
 #include <iostream>
 using namespace std;
 

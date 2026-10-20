@@ -1,3 +1,9 @@
+﻿/*
+ * File: check_valid_knight_tour.cpp
+ * Description: Checks whether a grid describes a valid knight's tour of a
+ *              chessboard.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

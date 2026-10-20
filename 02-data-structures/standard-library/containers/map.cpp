@@ -1,3 +1,9 @@
+﻿/*
+ * File: map.cpp
+ * Description: Demonstrates inserting, finding, and iterating over key-value
+ *              pairs in a map.
+ */
+
 #include<iostream>
 #include<map>
 using namespace std;

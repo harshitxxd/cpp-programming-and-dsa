@@ -1,3 +1,9 @@
+﻿/*
+ * File: valid_palindrome.cpp
+ * Description: Checks whether a string is a palindrome after ignoring
+ *              non-alphanumeric characters and case.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

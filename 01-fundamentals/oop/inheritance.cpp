@@ -1,3 +1,9 @@
+﻿/*
+ * File: inheritance.cpp
+ * Description: Demonstrates single, multilevel, hierarchical, and multiple
+ *              inheritance.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

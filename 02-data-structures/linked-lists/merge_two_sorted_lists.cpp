@@ -1,3 +1,8 @@
+﻿/*
+ * File: merge_two_sorted_lists.cpp
+ * Description: Merges two sorted singly linked lists into one sorted list.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

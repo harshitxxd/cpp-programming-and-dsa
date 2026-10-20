@@ -1,3 +1,9 @@
+﻿/*
+ * File: search_2d_matrix2.cpp
+ * Description: Searches for a target in a matrix whose rows and columns are
+ *              sorted.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

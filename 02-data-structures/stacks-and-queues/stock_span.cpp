@@ -1,3 +1,9 @@
+﻿/*
+ * File: stock_span.cpp
+ * Description: Calculates the stock span for each day using a monotonic
+ *              stack.
+ */
+
 #include<iostream>
 #include<vector>
 #include<stack>

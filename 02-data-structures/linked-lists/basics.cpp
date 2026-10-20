@@ -1,3 +1,9 @@
+﻿/*
+ * File: basics.cpp
+ * Description: Implements basic singly linked list operations, including
+ *              insertion, deletion, and display.
+ */
+
 #include<iostream>
 using namespace std;
 

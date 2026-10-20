@@ -1,3 +1,9 @@
+﻿/*
+ * File: gcd.cpp
+ * Description: Demonstrates iterative and recursive greatest common divisor
+ *              and least common multiple calculations.
+ */
+
 #include<iostream>
 using namespace std;
 

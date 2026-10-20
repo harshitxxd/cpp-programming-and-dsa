@@ -1,3 +1,9 @@
+﻿/*
+ * File: permutate_string.cpp
+ * Description: Generates and prints all permutations of a string using
+ *              recursion.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

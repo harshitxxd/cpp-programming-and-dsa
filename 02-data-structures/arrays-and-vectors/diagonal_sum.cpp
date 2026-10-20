@@ -1,3 +1,8 @@
+﻿/*
+ * File: diagonal_sum.cpp
+ * Description: Calculates the main diagonal sum of a square matrix.
+ */
+
 #include <iostream>
 using namespace std;
 

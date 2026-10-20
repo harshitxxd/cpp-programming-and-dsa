@@ -1,3 +1,9 @@
+﻿/*
+ * File: sorted_or_not.cpp
+ * Description: Recursively checks whether an integer array is sorted in
+ *              nondecreasing order.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

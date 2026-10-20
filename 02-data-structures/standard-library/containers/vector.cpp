@@ -1,3 +1,9 @@
+﻿/*
+ * File: vector.cpp
+ * Description: Demonstrates common vector operations, including insertion,
+ *              indexing, and accessors.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

@@ -1,3 +1,8 @@
+﻿/*
+ * File: queue.cpp
+ * Description: Implements a FIFO queue using a singly linked list.
+ */
+
 #include<iostream>
 using namespace std;
 

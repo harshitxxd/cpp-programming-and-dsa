@@ -1,3 +1,9 @@
+﻿/*
+ * File: n_queens.cpp
+ * Description: Solves the N-Queens problem by placing queens without
+ *              attacking one another.
+ */
+
 #include <iostream>
 #include <string>
 #include <vector>

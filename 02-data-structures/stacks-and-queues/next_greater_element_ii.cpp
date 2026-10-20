@@ -1,3 +1,9 @@
+﻿/*
+ * File: next_greater_element_ii.cpp
+ * Description: Finds next greater values in a circular array using a
+ *              monotonic stack.
+ */
+
 #include <iostream>
 #include <stack>
 #include <vector>

@@ -1,3 +1,9 @@
+﻿/*
+ * File: search_2d_matrix.cpp
+ * Description: Searches a row-wise sorted matrix by binary-searching its rows
+ *              and columns.
+ */
+
 #include<iostream>
 #include<vector>
 using namespace std;

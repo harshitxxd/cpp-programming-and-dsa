@@ -1,3 +1,9 @@
+﻿/*
+ * File: largest_rectangle_in_histogram.cpp
+ * Description: Finds the largest rectangular area that can be formed in a
+ *              histogram.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <stack>

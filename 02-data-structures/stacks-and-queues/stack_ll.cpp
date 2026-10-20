@@ -1,3 +1,8 @@
+﻿/*
+ * File: stack_ll.cpp
+ * Description: Implements a LIFO stack using a linked list.
+ */
+
 #include<iostream>
 #include<list>
 using namespace std;

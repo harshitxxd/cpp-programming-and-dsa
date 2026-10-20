@@ -1,3 +1,9 @@
+﻿/*
+ * File: matrix.cpp
+ * Description: Demonstrates reading, displaying, updating, and linearly
+ *              searching a two-dimensional array.
+ */
+
 // Time Complexity: O(n^2)
 
 #include<iostream>

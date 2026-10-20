@@ -1,3 +1,9 @@
+﻿/*
+ * File: previous_smaller_element.cpp
+ * Description: Finds the nearest smaller value to the left of each array
+ *              element.
+ */
+
 #include<iostream>
 #include<vector>
 #include<stack>

@@ -1,3 +1,8 @@
+﻿/*
+ * File: remove_all_occurrences.cpp
+ * Description: Removes all occurrences of a substring from a string.
+ */
+
 #include<iostream>
 #include<string>
 using namespace std;

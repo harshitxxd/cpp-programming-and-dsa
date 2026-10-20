@@ -1,3 +1,8 @@
+﻿/*
+ * File: permutations.cpp
+ * Description: Generates all permutations of the input array.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;
