@@ -54,6 +54,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   another.
 - `diameter_of_binary_tree.cpp` calculates the diameter (longest path between
   any two nodes) of a binary tree.
+- `lowest_common_ancestor_of_a_binary_tree.cpp` finds the lowest common ancestor
+  (LCA) of two given nodes in a binary tree.
 
 ## Running a Program
 
