@@ -60,6 +60,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   a binary tree from its preorder and inorder traversals.
 - `binary_tree_paths.cpp` returns all root-to-leaf paths in a binary tree
   formatted as strings.
+- `maximum_width_of_binary_tree.cpp` finds the maximum level width, including
+  gaps between non-null nodes.
 
 ## Running a Program
 
