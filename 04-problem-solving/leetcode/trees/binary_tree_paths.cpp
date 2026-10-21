@@ -69,6 +69,17 @@ public:
     }
 };
 
+void printPaths(const vector<string>& paths) {
+    cout << '[';
+    for (size_t i = 0; i < paths.size(); i++) {
+        cout << '"' << paths[i] << '"';
+        if (i + 1 < paths.size()) {
+            cout << ", ";
+        }
+    }
+    cout << ']' << endl;
+}
+
 int main() {
     Solution sol;
 
@@ -78,24 +89,16 @@ int main() {
     idx = -1;
     TreeNode* root1 = buildTree(preorder1);
     vector<string> res1 = sol.binaryTreePaths(root1);
-
-    cout << "Example 1: [";
-    for (size_t i = 0; i < res1.size(); i++) {
-        cout << "\"" << res1[i] << "\"" << (i + 1 < res1.size() ? ", " : "");
-    }
-    cout << "]" << endl;
+    cout << "Example 1: ";
+    printPaths(res1);
 
     // Example 2: root = [1] -> Output: ["1"]
     vector<int> preorder2 = {1, -1, -1};
     idx = -1;
     TreeNode* root2 = buildTree(preorder2);
     vector<string> res2 = sol.binaryTreePaths(root2);
-
-    cout << "Example 2: [";
-    for (size_t i = 0; i < res2.size(); i++) {
-        cout << "\"" << res2[i] << "\"" << (i + 1 < res2.size() ? ", " : "");
-    }
-    cout << "]" << endl;
+    cout << "Example 2: ";
+    printPaths(res2);
 
     return 0;
 }
