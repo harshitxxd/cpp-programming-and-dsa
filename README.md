@@ -58,6 +58,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   (LCA) of two given nodes in a binary tree.
 - `construct_binary_tree_from_preorder_and_inorder_traversal.cpp` reconstructs
   a binary tree from its preorder and inorder traversals.
+- `binary_tree_paths.cpp` returns all root-to-leaf paths in a binary tree
+  formatted as strings.
 
 ## Running a Program
 
