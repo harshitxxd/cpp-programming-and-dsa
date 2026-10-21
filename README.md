@@ -56,6 +56,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   any two nodes) of a binary tree.
 - `lowest_common_ancestor_of_a_binary_tree.cpp` finds the lowest common ancestor
   (LCA) of two given nodes in a binary tree.
+- `construct_binary_tree_from_preorder_and_inorder_traversal.cpp` reconstructs
+  a binary tree from its preorder and inorder traversals.
 
 ## Running a Program
 
