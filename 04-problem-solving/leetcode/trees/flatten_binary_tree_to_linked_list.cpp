@@ -3,8 +3,8 @@
  * Description: Flattens a binary tree in place into a right-skewed linked list
  *              following preorder traversal.
  *
- * Time Complexity: O(n) - each node is visited a bounded number of times.
- * Space Complexity: O(1) - the flattening algorithm uses constant extra space.
+ * Time Complexity: O(n) - each node is visited once.
+ * Space Complexity: O(h) - recursion stack, where h is the tree height.
  *
  */
 
@@ -39,24 +39,25 @@ TreeNode* buildTree(const vector<int>& preorder) {
 }
 
 class Solution {
+    TreeNode* nextright = nullptr;
+
+    void flattenReversePreorder(TreeNode* root) {
+        if (root == nullptr) {
+            return;
+        }
+
+        flattenReversePreorder(root->right);
+        flattenReversePreorder(root->left);
+
+        root->left = nullptr;
+        root->right = nextright;
+        nextright = root;
+    }
+
 public:
     void flatten(TreeNode* root) {
-        TreeNode* current = root;
-
-        while (current != nullptr) {
-            if (current->left != nullptr) {
-                TreeNode* predecessor = current->left;
-                while (predecessor->right != nullptr) {
-                    predecessor = predecessor->right;
-                }
-
-                predecessor->right = current->right;
-                current->right = current->left;
-                current->left = nullptr;
-            }
-
-            current = current->right;
-        }
+        nextright = nullptr;
+        flattenReversePreorder(root);
     }
 };
 
