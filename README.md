@@ -64,6 +64,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   gaps between non-null nodes.
 - `binary_tree_inorder_traversal.cpp` returns node values in inorder using
   iterative Morris traversal with O(1) auxiliary space.
+- `flatten_binary_tree_to_linked_list.cpp` flattens a binary tree in place into
+  a preorder linked list using O(1) extra space.
 
 ## Running a Program
 
