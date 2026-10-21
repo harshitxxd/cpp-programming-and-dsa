@@ -63,36 +63,34 @@ public:
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     int widthOfBinaryTree(TreeNode* root) {
+        queue<pair<TreeNode*, unsigned long long>> q;
         if (root == nullptr) {
             return 0;
         }
 
-        using Index = unsigned long long;
-        queue<pair<TreeNode*, Index>> nodes;
-        nodes.push({root, 0});
-        Index maxWidth = 0;
+        q.push({root, 0});
+        unsigned long long maxwidth = 0;
 
-        while (!nodes.empty()) {
-            size_t levelSize = nodes.size();
-            Index firstIndex = nodes.front().second;
-            Index lastIndex = nodes.back().second;
-            maxWidth = max(maxWidth, lastIndex - firstIndex + 1);
+        while (!q.empty()) {
+            size_t currlevelsize = q.size();
+            unsigned long long stidx = q.front().second;
+            unsigned long long endidx = q.back().second;
+            maxwidth = max(maxwidth, endidx - stidx + 1);
 
-            for (size_t i = 0; i < levelSize; i++) {
-                TreeNode* current = nodes.front().first;
-                Index index = nodes.front().second - firstIndex;
-                nodes.pop();
+            for (size_t i = 0; i < currlevelsize; i++) {
+                auto curr = q.front();
+                q.pop();
 
-                if (current->left != nullptr) {
-                    nodes.push({current->left, index * 2});
+                if (curr.first->left) {
+                    q.push({curr.first->left, curr.second * 2 + 1});
                 }
-                if (current->right != nullptr) {
-                    nodes.push({current->right, index * 2 + 1});
+                if (curr.first->right) {
+                    q.push({curr.first->right, curr.second * 2 + 2});
                 }
             }
         }
 
-        return static_cast<int>(maxWidth);
+        return static_cast<int>(maxwidth);
     }
 };
 
