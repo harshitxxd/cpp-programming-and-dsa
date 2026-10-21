@@ -62,6 +62,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   formatted as strings.
 - `maximum_width_of_binary_tree.cpp` finds the maximum level width, including
   gaps between non-null nodes.
+- `binary_tree_inorder_traversal.cpp` returns node values in inorder using
+  iterative Morris traversal with O(1) auxiliary space.
 
 ## Running a Program
 
