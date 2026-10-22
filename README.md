@@ -66,6 +66,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   iterative Morris traversal with O(1) auxiliary space.
 - `flatten_binary_tree_to_linked_list.cpp` flattens a binary tree in place into
   a preorder linked list using reverse-preorder recursion.
+- `convert_sorted_array_to_binary_search_tree.cpp` builds a height-balanced
+  binary search tree from a sorted array.
 
 ## Running a Program
 
