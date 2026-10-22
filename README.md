@@ -68,6 +68,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   a preorder linked list using reverse-preorder recursion.
 - `convert_sorted_array_to_binary_search_tree.cpp` builds a height-balanced
   binary search tree from a sorted array.
+- `validate_binary_search_tree.cpp` verifies that every node satisfies the
+  strict ordering bounds of a binary search tree.
 
 ## Running a Program
 
