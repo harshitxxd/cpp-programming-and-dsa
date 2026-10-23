@@ -70,6 +70,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   binary search tree from a sorted array.
 - `validate_binary_search_tree.cpp` verifies that every node satisfies the
   strict ordering bounds of a binary search tree.
+- `minimum_difference_between_bst_nodes.cpp` finds the minimum difference
+  between any two node values in a binary search tree.
 
 ## Running a Program
 
