@@ -11,8 +11,6 @@
 #include <climits>
 #include <algorithm>
 #include <iostream>
-#include <optional>
-#include <queue>
 #include <vector>
 using namespace std;
 
@@ -28,33 +26,16 @@ public:
         : val(x), left(left), right(right) {}
 };
 
-TreeNode* buildTree(const vector<optional<int>>& levelOrder) {
-    if (levelOrder.empty() || !levelOrder[0].has_value()) {
+static int idx = -1;
+
+TreeNode* buildTree(const vector<int>& preorder) {
+    idx++;
+    if (idx >= (int)preorder.size() || preorder[idx] == -1) {
         return nullptr;
     }
-
-    TreeNode* root = new TreeNode(*levelOrder[0]);
-    queue<TreeNode*> nodes;
-    nodes.push(root);
-    size_t index = 1;
-
-    while (index < levelOrder.size() && !nodes.empty()) {
-        TreeNode* current = nodes.front();
-        nodes.pop();
-
-        if (levelOrder[index].has_value()) {
-            current->left = new TreeNode(*levelOrder[index]);
-            nodes.push(current->left);
-        }
-        index++;
-
-        if (index < levelOrder.size() && levelOrder[index].has_value()) {
-            current->right = new TreeNode(*levelOrder[index]);
-            nodes.push(current->right);
-        }
-        index++;
-    }
-
+    TreeNode* root = new TreeNode(preorder[idx]);
+    root->left = buildTree(preorder);
+    root->right = buildTree(preorder);
     return root;
 }
 
@@ -107,13 +88,17 @@ void deleteTree(TreeNode* root) {
 int main() {
     Solution solution;
 
-    vector<optional<int>> levelOrder1 = {4, 2, 6, 1, 3};
-    TreeNode* root1 = buildTree(levelOrder1);
+    // Example 1: root = [4,2,6,1,3]
+    vector<int> preorder1 = {4, 2, 1, -1, -1, 3, -1, -1, 6, -1, -1};
+    idx = -1;
+    TreeNode* root1 = buildTree(preorder1);
     cout << "Example 1: " << solution.minDiffInBST(root1) << '\n';
     deleteTree(root1);
 
-    vector<optional<int>> levelOrder2 = {1, 0, 48, nullopt, nullopt, 12, 49};
-    TreeNode* root2 = buildTree(levelOrder2);
+    // Example 2: root = [1,0,48,null,null,12,49]
+    vector<int> preorder2 = {1, 0, -1, -1, 48, 12, -1, -1, 49, -1, -1};
+    idx = -1;
+    TreeNode* root2 = buildTree(preorder2);
     cout << "Example 2: " << solution.minDiffInBST(root2) << '\n';
     deleteTree(root2);
 
