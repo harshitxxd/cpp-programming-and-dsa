@@ -19,8 +19,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -30,7 +30,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= (int)preorder.size() || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
     TreeNode* root = new TreeNode(preorder[idx]);
     root->left = buildTree(preorder);
@@ -43,13 +43,13 @@ public:
     // Time Complexity: O(n)
     // Space Complexity: O(h) for the recursion stack.
     bool helper(TreeNode* root, TreeNode* minNode, TreeNode* maxNode) {
-        if (root == nullptr) {
+        if (root == NULL) {
             return true;
         }
-        if (minNode != nullptr && root->val <= minNode->val) {
+        if (minNode != NULL && root->val <= minNode->val) {
             return false;
         }
-        if (maxNode != nullptr && root->val >= maxNode->val) {
+        if (maxNode != NULL && root->val >= maxNode->val) {
             return false;
         }
 
@@ -58,12 +58,12 @@ public:
     }
 
     bool isValidBST(TreeNode* root) {
-        return helper(root, nullptr, nullptr);
+        return helper(root, NULL, NULL);
     }
 };
 
 void deleteTree(TreeNode* root) {
-    if (root == nullptr) {
+    if (root == NULL) {
         return;
     }
 

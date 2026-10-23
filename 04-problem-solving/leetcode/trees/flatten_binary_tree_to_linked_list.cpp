@@ -18,8 +18,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -29,7 +29,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= static_cast<int>(preorder.size()) || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
 
     TreeNode* root = new TreeNode(preorder[idx]);
@@ -39,33 +39,33 @@ TreeNode* buildTree(const vector<int>& preorder) {
 }
 
 class Solution {
-    TreeNode* nextright = nullptr;
+    TreeNode* nextright = NULL;
 
     void flattenReversePreorder(TreeNode* root) {
-        if (root == nullptr) {
+        if (root == NULL) {
             return;
         }
 
         flattenReversePreorder(root->right);
         flattenReversePreorder(root->left);
 
-        root->left = nullptr;
+        root->left = NULL;
         root->right = nextright;
         nextright = root;
     }
 
 public:
     void flatten(TreeNode* root) {
-        nextright = nullptr;
+        nextright = NULL;
         flattenReversePreorder(root);
     }
 };
 
 void printFlattened(TreeNode* root) {
     cout << '[';
-    while (root != nullptr) {
+    while (root != NULL) {
         cout << root->val;
-        if (root->right != nullptr) {
+        if (root->right != NULL) {
             cout << ", null, ";
         }
         root = root->right;
@@ -74,7 +74,7 @@ void printFlattened(TreeNode* root) {
 }
 
 void deleteFlattened(TreeNode* root) {
-    while (root != nullptr) {
+    while (root != NULL) {
         TreeNode* next = root->right;
         delete root;
         root = next;

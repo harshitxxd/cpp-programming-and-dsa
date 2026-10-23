@@ -19,8 +19,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -30,7 +30,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= (int)preorder.size() || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
     TreeNode* root = new TreeNode(preorder[idx]);
     root->left = buildTree(preorder);
@@ -46,21 +46,21 @@ public:
         vector<int> ans;
         TreeNode* curr = root;
 
-        while (curr != nullptr) {
-            if (curr->left == nullptr) {
+        while (curr != NULL) {
+            if (curr->left == NULL) {
                 ans.push_back(curr->val);
                 curr = curr->right;
             } else {
                 TreeNode* IP = curr->left;
-                while (IP->right != nullptr && IP->right != curr) {
+                while (IP->right != NULL && IP->right != curr) {
                     IP = IP->right;
                 }
 
-                if (IP->right == nullptr) {
+                if (IP->right == NULL) {
                     IP->right = curr;
                     curr = curr->left;
                 } else {
-                    IP->right = nullptr;
+                    IP->right = NULL;
                     ans.push_back(curr->val);
                     curr = curr->right;
                 }
@@ -82,7 +82,7 @@ void printVector(const vector<int>& values) {
 }
 
 void deleteTree(TreeNode* root) {
-    if (root == nullptr) {
+    if (root == NULL) {
         return;
     }
 

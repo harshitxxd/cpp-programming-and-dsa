@@ -21,8 +21,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -32,7 +32,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= (int)preorder.size() || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
     TreeNode* root = new TreeNode(preorder[idx]);
     root->left = buildTree(preorder);
@@ -46,7 +46,7 @@ public:
     // Space Complexity: O(n)
     int widthOfBinaryTree(TreeNode* root) {
         queue<pair<TreeNode*, unsigned long long>> q;
-        if (root == nullptr) {
+        if (root == NULL) {
             return 0;
         }
 
@@ -77,7 +77,7 @@ public:
 };
 
 void deleteTree(TreeNode* root) {
-    if (root == nullptr) {
+    if (root == NULL) {
         return;
     }
 
