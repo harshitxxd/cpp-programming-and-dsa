@@ -20,8 +20,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -31,7 +31,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= (int)preorder.size() || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
     TreeNode* root = new TreeNode(preorder[idx]);
     root->left = buildTree(preorder);
@@ -40,26 +40,26 @@ TreeNode* buildTree(const vector<int>& preorder) {
 }
 
 class Solution {
-    TreeNode* prev = nullptr;
+    TreeNode* prev = NULL;
 
     int traverseInorder(TreeNode* root) {
-        if (root == nullptr) {
+        if (root == NULL) {
             return INT_MAX;
         }
 
         int ans = INT_MAX;
-        if (root->left != nullptr) {
+        if (root->left != NULL) {
             int leftmin = traverseInorder(root->left);
             ans = min(ans, leftmin);
         }
 
-        if (prev != nullptr) {
+        if (prev != NULL) {
             ans = min(ans, root->val - prev->val);
         }
 
         prev = root;
 
-        if (root->right != nullptr) {
+        if (root->right != NULL) {
             int rightmin = traverseInorder(root->right);
             ans = min(ans, rightmin);
         }
@@ -70,13 +70,13 @@ public:
     // Time Complexity: O(n)
     // Space Complexity: O(h) for the recursion stack.
     int minDiffInBST(TreeNode* root) {
-        prev = nullptr;
+        prev = NULL;
         return traverseInorder(root);
     }
 };
 
 void deleteTree(TreeNode* root) {
-    if (root == nullptr) {
+    if (root == NULL) {
         return;
     }
 
