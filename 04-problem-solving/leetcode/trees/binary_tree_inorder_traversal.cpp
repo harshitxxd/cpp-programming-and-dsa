@@ -9,9 +9,7 @@
  *
  */
 
-#include <climits>
 #include <iostream>
-#include <queue>
 #include <vector>
 using namespace std;
 
@@ -27,33 +25,16 @@ public:
         : val(x), left(left), right(right) {}
 };
 
-TreeNode* buildTree(const vector<int>& levelOrder) {
-    if (levelOrder.empty() || levelOrder[0] == INT_MIN) {
+static int idx = -1;
+
+TreeNode* buildTree(const vector<int>& preorder) {
+    idx++;
+    if (idx >= (int)preorder.size() || preorder[idx] == -1) {
         return nullptr;
     }
-
-    TreeNode* root = new TreeNode(levelOrder[0]);
-    queue<TreeNode*> nodes;
-    nodes.push(root);
-    size_t i = 1;
-
-    while (i < levelOrder.size() && !nodes.empty()) {
-        TreeNode* current = nodes.front();
-        nodes.pop();
-
-        if (levelOrder[i] != INT_MIN) {
-            current->left = new TreeNode(levelOrder[i]);
-            nodes.push(current->left);
-        }
-        i++;
-
-        if (i < levelOrder.size() && levelOrder[i] != INT_MIN) {
-            current->right = new TreeNode(levelOrder[i]);
-            nodes.push(current->right);
-        }
-        i++;
-    }
-
+    TreeNode* root = new TreeNode(preorder[idx]);
+    root->left = buildTree(preorder);
+    root->right = buildTree(preorder);
     return root;
 }
 
@@ -113,19 +94,37 @@ void deleteTree(TreeNode* root) {
 int main() {
     Solution solution;
 
-    vector<vector<int>> examples = {
-        {1, INT_MIN, 2, 3},
-        {1, 2, 3, 4, 5, INT_MIN, 8, INT_MIN, INT_MIN, 6, 7, 9},
-        {},
-        {1}
-    };
+    // Example 1: root = [1,null,2,3]
+    vector<int> preorder1 = {1, -1, 2, 3, -1, -1, -1};
+    idx = -1;
+    TreeNode* root1 = buildTree(preorder1);
+    cout << "Example 1: ";
+    printVector(solution.inorderTraversal(root1));
+    deleteTree(root1);
 
-    for (size_t i = 0; i < examples.size(); i++) {
-        TreeNode* root = buildTree(examples[i]);
-        cout << "Example " << i + 1 << ": ";
-        printVector(solution.inorderTraversal(root));
-        deleteTree(root);
-    }
+    // Example 2: root = [1,2,3,4,5,null,8,null,null,6,7,9]
+    vector<int> preorder2 = {1, 2, 4, -1, -1, 5, 6, -1, -1, 7, -1, -1, 3, -1, 8, 9, -1, -1, -1};
+    idx = -1;
+    TreeNode* root2 = buildTree(preorder2);
+    cout << "Example 2: ";
+    printVector(solution.inorderTraversal(root2));
+    deleteTree(root2);
+
+    // Example 3: root = []
+    vector<int> preorder3 = {-1};
+    idx = -1;
+    TreeNode* root3 = buildTree(preorder3);
+    cout << "Example 3: ";
+    printVector(solution.inorderTraversal(root3));
+    deleteTree(root3);
+
+    // Example 4: root = [1]
+    vector<int> preorder4 = {1, -1, -1};
+    idx = -1;
+    TreeNode* root4 = buildTree(preorder4);
+    cout << "Example 4: ";
+    printVector(solution.inorderTraversal(root4));
+    deleteTree(root4);
 
     return 0;
 }

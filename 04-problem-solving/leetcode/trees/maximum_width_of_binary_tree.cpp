@@ -9,7 +9,6 @@
  */
 
 #include <algorithm>
-#include <climits>
 #include <iostream>
 #include <queue>
 #include <utility>
@@ -28,33 +27,16 @@ public:
         : val(x), left(left), right(right) {}
 };
 
-TreeNode* buildTree(const vector<int>& levelOrder) {
-    if (levelOrder.empty() || levelOrder[0] == INT_MIN) {
+static int idx = -1;
+
+TreeNode* buildTree(const vector<int>& preorder) {
+    idx++;
+    if (idx >= (int)preorder.size() || preorder[idx] == -1) {
         return nullptr;
     }
-
-    TreeNode* root = new TreeNode(levelOrder[0]);
-    queue<TreeNode*> nodes;
-    nodes.push(root);
-    size_t i = 1;
-
-    while (i < levelOrder.size() && !nodes.empty()) {
-        TreeNode* current = nodes.front();
-        nodes.pop();
-
-        if (levelOrder[i] != INT_MIN) {
-            current->left = new TreeNode(levelOrder[i]);
-            nodes.push(current->left);
-        }
-        i++;
-
-        if (i < levelOrder.size() && levelOrder[i] != INT_MIN) {
-            current->right = new TreeNode(levelOrder[i]);
-            nodes.push(current->right);
-        }
-        i++;
-    }
-
+    TreeNode* root = new TreeNode(preorder[idx]);
+    root->left = buildTree(preorder);
+    root->right = buildTree(preorder);
     return root;
 }
 
@@ -107,18 +89,24 @@ void deleteTree(TreeNode* root) {
 int main() {
     Solution solution;
 
-    vector<int> levelOrder1 = {1, 3, 2, 5, 3, INT_MIN, 9};
-    TreeNode* root1 = buildTree(levelOrder1);
+    // Example 1: root = [1,3,2,5,3,null,9]
+    vector<int> preorder1 = {1, 3, 5, -1, -1, 3, -1, -1, 2, -1, 9, -1, -1};
+    idx = -1;
+    TreeNode* root1 = buildTree(preorder1);
     cout << "Example 1: " << solution.widthOfBinaryTree(root1) << '\n';
     deleteTree(root1);
 
-    vector<int> levelOrder2 = {1, 3, 2, 5, INT_MIN, INT_MIN, 9, 6, INT_MIN, 7};
-    TreeNode* root2 = buildTree(levelOrder2);
+    // Example 2: root = [1,3,2,5,null,null,9,6,null,7]
+    vector<int> preorder2 = {1, 3, 5, 6, -1, -1, -1, -1, 2, -1, 9, 7, -1, -1, -1};
+    idx = -1;
+    TreeNode* root2 = buildTree(preorder2);
     cout << "Example 2: " << solution.widthOfBinaryTree(root2) << '\n';
     deleteTree(root2);
 
-    vector<int> levelOrder3 = {1, 3, 2, 5};
-    TreeNode* root3 = buildTree(levelOrder3);
+    // Example 3: root = [1,3,2,5]
+    vector<int> preorder3 = {1, 3, 5, -1, -1, -1, 2, -1, -1};
+    idx = -1;
+    TreeNode* root3 = buildTree(preorder3);
     cout << "Example 3: " << solution.widthOfBinaryTree(root3) << '\n';
     deleteTree(root3);
 
