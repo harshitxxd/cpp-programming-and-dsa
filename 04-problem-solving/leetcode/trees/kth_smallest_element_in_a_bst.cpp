@@ -19,8 +19,8 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
@@ -30,7 +30,7 @@ static int idx = -1;
 TreeNode* buildTree(const vector<int>& preorder) {
     idx++;
     if (idx >= static_cast<int>(preorder.size()) || preorder[idx] == -1) {
-        return nullptr;
+        return NULL;
     }
 
     TreeNode* root = new TreeNode(preorder[idx]);
@@ -43,11 +43,11 @@ class Solution {
     int prevOrder = 0;
 
     int kthSmallestRecursive(TreeNode* root, int k) {
-        if (root == nullptr) {
+        if (root == NULL) {
             return -1;
         }
 
-        if (root->left != nullptr) {
+        if (root->left != NULL) {
             int leftAnswer = kthSmallestRecursive(root->left, k);
             if (leftAnswer != -1) {
                 return leftAnswer;
@@ -59,7 +59,7 @@ class Solution {
         }
         prevOrder++;
 
-        if (root->right != nullptr) {
+        if (root->right != NULL) {
             int rightAnswer = kthSmallestRecursive(root->right, k);
             if (rightAnswer != -1) {
                 return rightAnswer;
@@ -78,7 +78,7 @@ public:
 };
 
 void deleteTree(TreeNode* root) {
-    if (root == nullptr) {
+    if (root == NULL) {
         return;
     }
 
