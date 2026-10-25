@@ -76,6 +76,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   between any two node values in a binary search tree.
 - `kth_smallest_element_in_a_bst.cpp` finds the kth smallest value using
   recursive inorder traversal.
+- `construct_binary_search_tree_from_preorder_traversal.cpp` constructs a
+  binary search tree from its preorder traversal using recursive bounds.
 
 ## Running a Program
 
