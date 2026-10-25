@@ -72,6 +72,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   strict ordering bounds of a binary search tree.
 - `minimum_difference_between_bst_nodes.cpp` finds the minimum difference
   between any two node values in a binary search tree.
+- `kth_smallest_element_in_a_bst.cpp` finds the kth smallest value using
+  recursive inorder traversal.
 
 ## Running a Program
 
