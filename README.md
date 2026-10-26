@@ -78,6 +78,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   recursive inorder traversal.
 - `construct_binary_search_tree_from_preorder_traversal.cpp` constructs a
   binary search tree from its preorder traversal using recursive bounds.
+- `recover_binary_search_tree.cpp` restores two swapped BST node values using
+  recursive inorder traversal.
 
 ## Running a Program
 
