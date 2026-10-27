@@ -80,6 +80,8 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   binary search tree from its preorder traversal using recursive bounds.
 - `recover_binary_search_tree.cpp` restores two swapped BST node values using
   recursive inorder traversal.
+- `populating_next_right_pointers_in_each_node.cpp` connects each node to its
+  next right node in a perfect binary tree using constant auxiliary space.
 
 ## Running a Program
 
