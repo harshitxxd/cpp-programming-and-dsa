@@ -1,57 +1,50 @@
 /*
  * File: number_of_islands.cpp
- * Description: Counts the connected components of land in a 2D grid.
+ * Description: Counts the connected components of land in a 2D grid using
+ *              recursive depth-first search.
  *
  * Time Complexity: O(m * n) - each cell is visited at most once.
- * Space Complexity: O(m * n) - visited cells and the iterative DFS stack.
+ * Space Complexity: O(m * n) - visited cells and the recursive call stack.
  *
  */
 
 #include <iostream>
-#include <utility>
 #include <vector>
 using namespace std;
 
 class Solution {
+    void dfs(int i, int j, vector<vector<bool>>& visited,
+             vector<vector<char>>& grid, int rows, int columns) {
+        if (i < 0 || j < 0 || i >= rows || j >= columns ||
+            visited[i][j] || grid[i][j] != '1') {
+            return;
+        }
+
+        visited[i][j] = true;
+
+        dfs(i - 1, j, visited, grid, rows, columns);
+        dfs(i, j + 1, visited, grid, rows, columns);
+        dfs(i + 1, j, visited, grid, rows, columns);
+        dfs(i, j - 1, visited, grid, rows, columns);
+    }
+
 public:
+    // Time Complexity: O(m * n)
+    // Space Complexity: O(m * n) for visited cells and recursion stack.
     int numIslands(vector<vector<char>>& grid) {
         int rows = grid.size();
         int columns = grid[0].size();
         vector<vector<bool>> visited(rows, vector<bool>(columns, false));
         int islands = 0;
-        const int rowOffsets[] = {-1, 0, 1, 0};
-        const int columnOffsets[] = {0, 1, 0, -1};
 
-        for (int row = 0; row < rows; row++) {
-            for (int column = 0; column < columns; column++) {
-                if (grid[row][column] != '1' || visited[row][column]) {
-                    continue;
-                }
-
-                islands++;
-                vector<pair<int, int>> stack = {{row, column}};
-                visited[row][column] = true;
-
-                while (!stack.empty()) {
-                    pair<int, int> cell = stack.back();
-                    stack.pop_back();
-
-                    for (int direction = 0; direction < 4; direction++) {
-                        int nextRow = cell.first + rowOffsets[direction];
-                        int nextColumn = cell.second + columnOffsets[direction];
-
-                        if (nextRow >= 0 && nextRow < rows &&
-                            nextColumn >= 0 && nextColumn < columns &&
-                            grid[nextRow][nextColumn] == '1' &&
-                            !visited[nextRow][nextColumn]) {
-                            visited[nextRow][nextColumn] = true;
-                            stack.push_back({nextRow, nextColumn});
-                        }
-                    }
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                if (grid[i][j] == '1' && !visited[i][j]) {
+                    dfs(i, j, visited, grid, rows, columns);
+                    islands++;
                 }
             }
         }
-
         return islands;
     }
 };
@@ -65,7 +58,7 @@ int main() {
         {'1', '1', '0', '0', '0'},
         {'0', '0', '0', '0', '0'}
     };
-    cout << "Example 1: " << solution.numIslands(grid1) << endl;
+    cout << "Example 1: " << solution.numIslands(grid1) << '\n';
 
     vector<vector<char>> grid2 = {
         {'1', '1', '0', '0', '0'},
@@ -73,7 +66,7 @@ int main() {
         {'0', '0', '1', '0', '0'},
         {'0', '0', '0', '1', '1'}
     };
-    cout << "Example 2: " << solution.numIslands(grid2) << endl;
+    cout << "Example 2: " << solution.numIslands(grid2) << '\n';
 
     return 0;
 }

@@ -91,7 +91,7 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
 The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
 
 - `number_of_islands.cpp` counts the four-directionally connected groups of
-  land using iterative depth-first search.
+  land using recursive depth-first search.
 
 ## Running a Program
 
