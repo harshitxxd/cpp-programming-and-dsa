@@ -61,10 +61,13 @@ class graph{
     }
 
     void dfs(){
-        int src = 0;
         vector<bool>vis(v,false);
 
-        dfshelper(src, vis);
+        for (int i =0; i < v ;i++){
+            if(!vis[i]){
+                dfshelper(i, vis);
+            }
+        }
         cout << endl;
     }
 };
