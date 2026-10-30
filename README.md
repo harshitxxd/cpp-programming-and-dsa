@@ -30,6 +30,7 @@ A collection of C++ examples and problem solutions organized as a learning path:
   leetcode/
     arrays/
     design/
+    graphs/
     math/
     recursion/
     strings/
@@ -84,6 +85,13 @@ The tree-problem solutions are in `04-problem-solving/leetcode/trees/`:
   recursive inorder traversal.
 - `populating_next_right_pointers_in_each_node.cpp` connects each node to its
   next right node in a perfect binary tree using constant auxiliary space.
+
+## LeetCode graph solutions
+
+The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
+
+- `number_of_islands.cpp` counts the four-directionally connected groups of
+  land using iterative depth-first search.
 
 ## Running a Program
 
