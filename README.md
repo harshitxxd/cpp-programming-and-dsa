@@ -92,6 +92,8 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
 
 - `number_of_islands.cpp` counts the four-directionally connected groups of
   land using recursive depth-first search.
+- `rotting_oranges.cpp` finds the minimum time for fresh oranges to rot using
+  multi-source breadth-first search.
 
 ## Running a Program
 
