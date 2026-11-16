@@ -94,6 +94,8 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
   land using recursive depth-first search.
 - `rotting_oranges.cpp` finds the minimum time for fresh oranges to rot using
   multi-source breadth-first search.
+- `course_schedule.cpp` determines whether all courses can be completed by
+  detecting cycles in the prerequisite graph with recursive DFS.
 
 ## Running a Program
 
