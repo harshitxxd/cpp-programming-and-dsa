@@ -98,6 +98,8 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
   detecting cycles in the prerequisite graph with recursive DFS.
 - `course_schedule2.cpp` returns a valid ordering of courses using cycle
   detection and DFS-based topological sorting.
+- `flood_fill.cpp` recolors a four-directionally connected image region using
+  recursive depth-first search.
 
 ## Running a Program
 
