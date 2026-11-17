@@ -13,41 +13,38 @@
 using namespace std;
 
 class Solution {
-    bool iscycledfs(int src, vector<bool>& vis, vector<bool>& recpath,
-                    vector<vector<int>>& prerequisites) {
+public:
+    bool iscycledfs(int src , vector<bool>&vis,vector<bool>&recpath,vector<vector<int>>& edges){
         vis[src] = true;
-        recpath[src] = true;
+        recpath[src] = true ;
 
-        for (int i = 0; i < static_cast<int>(prerequisites.size()); i++) {
-            int course = prerequisites[i][0];
-            int prerequisite = prerequisites[i][1];
+        for(int i= 0 ;  i< edges.size();i++){
+            int v = edges[i][0];
+            int u = edges[i][1];
 
-            if (prerequisite == src) {
-                if (!vis[course]) {
-                    if (iscycledfs(course, vis, recpath, prerequisites)) {
+            if(u == src ){
+                if(!vis[v]){
+                    if(iscycledfs(v,vis,recpath,edges)){
                         return true;
                     }
-                } else if (recpath[course]) {
+                }else if(recpath[v]){
                     return true;
                 }
             }
         }
 
         recpath[src] = false;
-        return false;
+        return false ;
     }
+    bool canFinish(int n, vector<vector<int>>& edges) {
+        vector<bool>vis(n,false);
+        vector<bool>recpath(n,false);
 
-public:
-    // Time Complexity: O(V * E)
-    // Space Complexity: O(V) for visitation state and recursion stack.
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<bool> vis(numCourses, false);
-        vector<bool> recpath(numCourses, false);
-
-        for (int course = 0; course < numCourses; course++) {
-            if (!vis[course] &&
-                iscycledfs(course, vis, recpath, prerequisites)) {
-                return false;
+        for(int i = 0 ; i < n ; i++){
+            if(!vis[i]){
+                if(iscycledfs(i,vis,recpath ,edges)){
+                    return false;
+                }
             }
         }
         return true;
