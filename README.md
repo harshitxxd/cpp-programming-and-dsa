@@ -96,6 +96,8 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
   multi-source breadth-first search.
 - `course_schedule.cpp` determines whether all courses can be completed by
   detecting cycles in the prerequisite graph with recursive DFS.
+- `course_schedule2.cpp` returns a valid ordering of courses using cycle
+  detection and DFS-based topological sorting.
 
 ## Running a Program
 
