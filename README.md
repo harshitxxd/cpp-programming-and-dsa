@@ -101,7 +101,7 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
 - `flood_fill.cpp` recolors a four-directionally connected image region using
   recursive depth-first search.
 - `number_of_provinces.cpp` counts connected groups of cities using recursive
-  depth-first search on the adjacency matrix.
+  depth-first search or disjoint set union on the adjacency matrix.
 
 ## Running a Program
 
