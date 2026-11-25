@@ -16,19 +16,19 @@ class disjointsetunion{
         }
     }
 
-    void unionbyrank(int a, int b){
-        int para = find(a);
-        int parb = find(b);
+    void unionbyrank(int A, int B){
+        int parA = find(A);
+        int parB = find(B);
 
-        if(para == parb) return;
+        if(parA == parB) return;
 
-        if(rank[para] == rank[parb]){
-            par[parb] = para;
-            rank[para]++;
-        }else if(rank[para] > rank[parb]){
-            par[parb] = para;
+        if(rank[parA] == rank[parB]){
+            par[parB] = parA;
+            rank[parA]++;
+        }else if(rank[parA] > rank[parB]){
+            par[parB] = parA;
         }else {
-            par[para] = parb;
+            par[parA] = parB;
         }
     }
 
