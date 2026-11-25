@@ -102,6 +102,8 @@ The graph-problem solutions are in `04-problem-solving/leetcode/graphs/`:
   recursive depth-first search.
 - `number_of_provinces.cpp` counts connected groups of cities using recursive
   depth-first search or disjoint set union on the adjacency matrix.
+- `min_cost_to_connect_all_points.cpp` finds the minimum Manhattan-distance
+  spanning tree using Prim's algorithm.
 
 ## Running a Program
 
