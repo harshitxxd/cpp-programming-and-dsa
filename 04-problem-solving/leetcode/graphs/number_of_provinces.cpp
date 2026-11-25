@@ -13,30 +13,29 @@
 using namespace std;
 
 class Solution {
-    int findDSU(int city, vector<int>& parent) {
-        if (parent[city] == city) {
-            return city;
+    int findD(int x, vector<int>& par) {
+        if (par[x] == x) {
+            return x;
         }
-        parent[city] = findDSU(parent[city], parent);
-        return parent[city];
+        par[x] = findD(par[x], par);
+        return par[x];
     }
 
-    void unionCities(int first, int second, vector<int>& parent,
-                     vector<int>& rank) {
-        int firstParent = findDSU(first, parent);
-        int secondParent = findDSU(second, parent);
+    void unite(int a, int b, vector<int>& par, vector<int>& rk) {
+        int pa = findD(a, par);
+        int pb = findD(b, par);
 
-        if (firstParent == secondParent) {
+        if (pa == pb) {
             return;
         }
 
-        if (rank[firstParent] > rank[secondParent]) {
-            parent[secondParent] = firstParent;
-        } else if (rank[firstParent] < rank[secondParent]) {
-            parent[firstParent] = secondParent;
+        if (rk[pa] > rk[pb]) {
+            par[pb] = pa;
+        } else if (rk[pa] < rk[pb]) {
+            par[pa] = pb;
         } else {
-            parent[secondParent] = firstParent;
-            rank[firstParent]++;
+            par[pb] = pa;
+            rk[pa]++;
         }
     }
 
@@ -72,28 +71,28 @@ public:
     // Space Complexity: O(n) for parent and rank arrays.
     int findCircleNumUsingDSU(vector<vector<int>>& isConnected) {
         int n = static_cast<int>(isConnected.size());
-        vector<int> parent(n);
-        vector<int> rank(n, 0);
+        vector<int> par(n);
+        vector<int> rk(n, 0);
 
-        for (int city = 0; city < n; city++) {
-            parent[city] = city;
+        for (int i = 0; i < n; i++) {
+            par[i] = i;
         }
 
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (isConnected[i][j] == 1) {
-                    unionCities(i, j, parent, rank);
+                    unite(i, j, par, rk);
                 }
             }
         }
 
-        int provinces = 0;
-        for (int city = 0; city < n; city++) {
-            if (findDSU(city, parent) == city) {
-                provinces++;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (findD(i, par) == i) {
+                ans++;
             }
         }
-        return provinces;
+        return ans;
     }
 };
 
